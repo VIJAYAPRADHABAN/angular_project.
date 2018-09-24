@@ -1,0 +1,11 @@
+input{
+    width:50%;
+    height:35px ;
+    font-size: 25px;
+    color: darkorchid
+} 
+li,h1
+{
+    color:black;
+    list-style: none;
+}

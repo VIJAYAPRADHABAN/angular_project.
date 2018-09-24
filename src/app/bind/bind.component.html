@@ -1,0 +1,10 @@
+<body style="text-align:right; background-image: url('../src/assets/images/pulsar.jpg');background-size:cover;border-style:ridge">
+
+<ul>
+  <Li *ngFor = "let a of varrr" (click)="onSelect(a)"><h1>{{a.id}}&nbsp;&nbsp;{{a.name}}&nbsp;&nbsp;{{a.desc | uppercase}}</h1></Li>
+</ul>
+<div *ngIf="select">
+
+<input [(ngModel)]="select.desc">
+</div>
+</body>

@@ -1,0 +1,51 @@
+
+<div id='main' *ngFor="let a of mockList">
+  <div id="left">
+      <img [src]='a.photopath' width="200em" height="100px" style="border:aliceblue">
+      
+      <h1>{{a.name}}</h1>
+
+  </div>
+  <div id="right">
+      <table>
+          <tr>
+              <td>
+                  <label><strong> Id No </strong></label>
+              </td>
+              <td>{{a.id}}</td>
+          </tr>
+          <tr>
+              <td>
+                  <label><strong>Name</strong></label>
+              </td>
+              <td>{{a.name}}</td>
+          </tr>
+          <tr>
+              <td>
+                  <label><strong>review</strong> </label>
+              </td>
+              <td>{{a.desc}}</td>
+          </tr>
+
+          <tr>
+              <td>
+                  <label><strong>price</strong> </label>
+              </td>
+              <td>$&nbsp;{{a.price}}</td>
+          </tr>
+          <tr>
+              <td>
+                  <label><strong>speed</strong></label>
+              </td>
+              <td>{{a.speed}}&nbsp;kmph</td>
+          </tr>
+          <tr>
+              <td>
+                  <label><strong>weight</strong></label>
+              </td>
+              <td>{{a.weight}}&nbsp;kg</td>
+          </tr>
+      </table>
+
+  </div>
+</div>
